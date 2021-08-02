@@ -1,0 +1,16 @@
+{
+    "require": {
+        "vladimir163/lead-generator": "dev-master",
+        "amphp/parallel": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "LeadGenerator\\": "vendor/vladimir163/lead-generator/src/",
+            "RequestHendler\\": "src/",
+            "Amp\\": "vendor/amphp/amp/lib/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    }
+}
