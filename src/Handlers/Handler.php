@@ -9,6 +9,10 @@ use LeadGenerator\Lead;
  */
 abstract class Handler
 {
+    /**
+     * @param Lead $lead
+     * @return mixed
+     */
     protected abstract function executeLead(Lead $lead);
 
     /**

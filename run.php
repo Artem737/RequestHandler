@@ -24,6 +24,7 @@ $promises = [];
 $generator->generateLeads(LEADS_COUNT, function (Lead $lead) use (&$promises, $writer) {
 
     $promises[$lead->id] = Worker\enqueueCallable('executeLead', $writer, $lead);
+
 });
 
 //Дожидаемся выполнения всех процессов.
